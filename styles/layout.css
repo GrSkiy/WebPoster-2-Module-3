@@ -5,15 +5,67 @@
 body {
   overflow: hidden;
 }
+section {
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  margin: 16px;
+  opacity: 0;
+}
+
+h1 {
+  font-family: "1";
+  font-size: 80px;
+  line-height: 80%;
+  width: 735px;
+  color: #C4222C;
+  margin-top: 16px;
+  opacity: 0;
+}
+
+h2 {
+  position: absolute;
+  font-family: "1";
+  color: #C4222C;
+  font-size: 88px;
+  left: 255px;
+  z-index: 12;
+  opacity: 0;
+}
+
+.first {
+  bottom: 180px;
+}
+
+.second {
+  bottom: 100px;
+}
+
+.third {
+  bottom: 16px;
+}
+
+p {
+  position: absolute;
+  color: #C4222C;
+  font-family: "2";
+  font-size: 22px;
+  width: 247px;
+  height: 446px;
+  top: 390px;
+  left: 255px;
+}
 
 .first-eye {
   width: 200px;
   height: 200px;
-  background-color: red;
   border-radius: 50%;
   position: absolute;
   z-index: 1;
   top: 200px;
+  left: -200px;
+  background-color: #C4222C;
 }
 
 .first-zrachok {
@@ -27,15 +79,53 @@ body {
 .second-eye {
   width: 75px;
   height: 75px;
-  background-color: red;
   border-radius: 50%;
   position: absolute;
   z-index: -24;
   top: 200px;
-  right: -100px;
+  right: -200px;
+  background-color: #C4222C;
 }
 
 .second-zrachok {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.third-eye {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -24;
+  left: -100px;
+  background-color: #C4222C;
+}
+
+.third-zrachok {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.fourth-eye {
+  width: 75px;
+  height: 75px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -22;
+  right: 64.79%;
+  top: 45%;
+
+}
+
+.fourth-zrachok {
   position: relative;
   width: 40px;
   height: 40px;
@@ -51,7 +141,7 @@ body {
   height: 785px;
   position: absolute;
   left: 10.05%;
-  bottom: 0%;
+  bottom: -785px;
   z-index: 0
 }
 
@@ -62,7 +152,7 @@ body {
   height: 410px;
   position: absolute;
   left: 24.01%;
-  bottom: 0%;
+  bottom: -410px;
   z-index: -3;
 }
 
@@ -73,7 +163,7 @@ body {
   height: 623px;
   position: absolute;
   left: 38.96%;
-  bottom: 0%;
+  bottom: -623px;
 
   z-index: -5;
 }
@@ -85,7 +175,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 76.51%;
-  bottom: 0%;
+  bottom: -624px;
   z-index: -7
 }
 
@@ -96,7 +186,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 86.82%;
-  bottom: 0%;
+  bottom: -808px;
   z-index: -9;
 }
 
@@ -107,7 +197,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 24.9%;
-  bottom: 0%;
+  bottom: -678px;
   z-index: -11;
 }
 
@@ -118,7 +208,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 33.23%;
-  bottom: 0%;
+  bottom: -524px;
   z-index: -13;
 }
 
@@ -129,7 +219,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 47.4%;
-  bottom: 0%;
+  bottom: -434px;
   z-index: -15;
 }
 
@@ -140,7 +230,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 4%;
-  bottom: 0%;
+  bottom: -359px;
   z-index: -17;
 }
 
@@ -151,7 +241,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: -10px;
-  bottom: 0%;
+  bottom: -400px;
   z-index: -19;
 }
 
@@ -162,7 +252,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 0.6%;
-  bottom: 0%;
+  bottom: -478px;
   z-index: -21;
 }
 
@@ -173,7 +263,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 5.21%;
-  bottom: 0%;
+  bottom: -610px;
   z-index: -23;
 }
 
@@ -185,7 +275,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 32.76%;
-  bottom: 0%;
+  bottom: -662px;
   z-index: -25;
 }
 
@@ -197,7 +287,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 68%;
-  bottom: 0%;
+  bottom: -496px;
   z-index: -27;
 }
 
@@ -208,7 +298,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 59.38%;
-  bottom: 0%;
+  bottom: -306px;
   z-index: -29;
 }
 
@@ -219,7 +309,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 65.83%;
-  bottom: 0%;
+  bottom: -442px;
   z-index: -31;
 }
 
@@ -230,7 +320,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 61.04%;
-  bottom: 0%;
+  bottom: -475px;
   z-index: -33;
 }
 
@@ -241,6 +331,96 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 53.91%;
-  bottom: 0%;
+  bottom: -351px;
   z-index: -35 ;
+}
+
+@media (max-width: 1440px) {
+  h2 {
+    font-size: 64px;
+    left: 187px;
+  }
+  .third {
+    bottom: 26px;
+  }
+  .second {
+    bottom: 90px;
+  }
+
+  .first {
+    bottom: 155px;
+  }
+
+  .img1 {
+    background-image: url(../img/1.1.svg);
+    height: 650px;
+  }
+  .img2 {
+    background-image: url(../img/2.1.svg);
+    height: 377px;
+  }
+  .img3 {
+    background-image: url(../img/3.1.svg);
+    height: 516px
+  }
+  .img4 {
+    background-image: url(../img/4.1.svg);
+    height: 517px;
+  }
+  .img5 {
+    background-image: url(../img/5.1.svg);
+    height: 670px
+  }
+  .img6 {
+    background-image: url(../img/6.1.svg);
+    height: 562px
+  }
+  .img7 {
+    background-image: url(../img/7.1.svg);
+    height: 434px;
+  }
+  .img8 {
+    background-image: url(../img/8.1.svg);
+    height: 360px;
+  }
+  .img9 {
+    background-image: url(../img/9.1.svg);
+    height: 298px
+  }
+  .img10 {
+    background-image: url(../img/10.1.svg);
+    height: 331px
+  }
+  .img11 {
+    background-image: url(../img/11.1.svg);
+    height: 396px
+  }
+  .img12 {
+    background-image: url(../img/12.1.svg);
+    height: 506px
+  }
+  .img13 {
+    background-image: url(../img/13.1.svg);
+    height: 549px
+  }
+  .img14 {
+    background-image: url(../img/14.1.svg);
+    height: 411px
+  }
+  .img15 {
+    background-image: url(../img/15.1.svg);
+    height: 254px
+  }
+  .img16 {
+    background-image: url(../img/16.1.svg);
+    height: 366px
+  }
+  .img17 {
+    background-image: url(../img/17.1.svg);
+    height: 394px
+  }
+  .img18 {
+    background-image: url(../img/18.1.svg);
+    height: 291px;
+  }
 }

@@ -1,0 +1,246 @@
+* {
+  transition-duration: .4s;
+}
+
+body {
+  overflow: hidden;
+}
+
+.first-eye {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 200px;
+}
+
+.first-zrachok {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.second-eye {
+  width: 75px;
+  height: 75px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -24;
+  top: 200px;
+  right: -100px;
+}
+
+.second-zrachok {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.img1 {
+  z-index: -3;
+  background-image: url(../img/1.svg);
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 785px;
+  position: absolute;
+  left: 10.05%;
+  bottom: 0%;
+  z-index: 0
+}
+
+.img2 {
+  background-image: url(../img/2.svg);
+  background-repeat: no-repeat;
+  width: 375px;
+  height: 410px;
+  position: absolute;
+  left: 24.01%;
+  bottom: 0%;
+  z-index: -3;
+}
+
+.img3 {
+  background-image: url(../img/3.svg);
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 623px;
+  position: absolute;
+  left: 38.96%;
+  bottom: 0%;
+
+  z-index: -5;
+}
+
+.img4 {
+  width: 240px;
+  height: 624px;
+  background-image: url(../img/4.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 76.51%;
+  bottom: 0%;
+  z-index: -7
+}
+
+.img5 {
+  width: 310px;
+  height: 808px;
+  background-image: url(../img/5.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 86.82%;
+  bottom: 0%;
+  z-index: -9;
+}
+
+.img6 {
+  width: 310px;
+  height: 678px;
+  background-image: url(../img/6.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 24.9%;
+  bottom: 0%;
+  z-index: -11;
+}
+
+.img7 {
+  width: 210px;
+  height: 524px;
+  background-image: url(../img/7.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 33.23%;
+  bottom: 0%;
+  z-index: -13;
+}
+
+.img8 {
+  width: 170px;
+  height: 434px;
+  background-image: url(../img/8.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 47.4%;
+  bottom: 0%;
+  z-index: -15;
+}
+
+.img9{
+  width: 150px;
+  height: 359px;
+  background-image: url(../img/9.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 4%;
+  bottom: 0%;
+  z-index: -17;
+}
+
+.img10 {
+  width: 210px;
+  height: 400px;
+  background-image: url(../img/10.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -10px;
+  bottom: 0%;
+  z-index: -19;
+}
+
+.img11 {
+  width: 210px;
+  height: 478px;
+  background-image: url(../img/11.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0.6%;
+  bottom: 0%;
+  z-index: -21;
+}
+
+.img12 {
+  width: 120px;
+  height:610px;
+  background-image: url(../img/12.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 5.21%;
+  bottom: 0%;
+  z-index: -23;
+}
+
+
+.img13 {
+  width: 200px;
+  height: 662px;
+  background-image: url(../img/13.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 32.76%;
+  bottom: 0%;
+  z-index: -25;
+}
+
+
+.img14 {
+  width: 200px;
+  height: 496px;
+  background-image: url(../img/14.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 68%;
+  bottom: 0%;
+  z-index: -27;
+}
+
+.img15 {
+  width: 230px;
+  height: 306px;
+  background-image: url(../img/15.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 59.38%;
+  bottom: 0%;
+  z-index: -29;
+}
+
+.img16 {
+  width: 130px;
+  height: 442px;
+  background-image: url(../img/16.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 65.83%;
+  bottom: 0%;
+  z-index: -31;
+}
+
+.img17 {
+  width: 140px;
+  height: 475px;
+  background-image: url(../img/17.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 61.04%;
+  bottom: 0%;
+  z-index: -33;
+}
+
+.img18 {
+  width: 200px;
+  height: 351px;
+  background-image: url(../img/18.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 53.91%;
+  bottom: 0%;
+  z-index: -35 ;
+}

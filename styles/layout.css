@@ -1,60 +1,33 @@
 * {
-  transition-duration: .4s;
+
 }
 
 body {
   overflow: hidden;
 }
-section {
-  display: flex;
-  flex-direction: row;
-}
-.logo {
-  margin: 16px;
-  opacity: 0;
-}
 
-h1 {
-  font-family: "1";
-  font-size: 80px;
-  line-height: 80%;
-  width: 735px;
-  color: #C4222C;
-  margin-top: 16px;
-  opacity: 0;
-}
-
-h2 {
+.main-animation {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  font-family: "1";
-  color: #C4222C;
-  font-size: 88px;
-  left: 255px;
-  z-index: 12;
-  opacity: 0;
+  top: 25px;
 }
 
-.first {
-  bottom: 180px;
-}
-
-.second {
-  bottom: 100px;
-}
-
-.third {
-  bottom: 16px;
-}
-
-p {
+.giant-glaz {
   position: absolute;
-  color: #C4222C;
-  font-family: "2";
-  font-size: 22px;
-  width: 247px;
-  height: 446px;
-  top: 390px;
-  left: 255px;
+  top: 180%;
+  z-index: -100;
+  width: 1000px;
+  height: 1000px;
+  background-color: #C4222C;
+  border-radius: 50%;
+}
+
+.giant-zrachok {
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .first-eye {
@@ -63,9 +36,10 @@ p {
   border-radius: 50%;
   position: absolute;
   z-index: 1;
-  top: 200px;
-  left: -200px;
+  top: 20%;
+  left: -20%;
   background-color: #C4222C;
+  transition-duration: 0.4s;
 }
 
 .first-zrachok {
@@ -74,6 +48,7 @@ p {
   height: 100px;
   background-color: white;
   border-radius: 50%;
+  transition-duration: 0.4s;
 }
 
 .second-eye {
@@ -82,9 +57,10 @@ p {
   border-radius: 50%;
   position: absolute;
   z-index: -24;
-  top: 200px;
-  right: -200px;
+  top: 20%;
+  right: -20%;
   background-color: #C4222C;
+  transition-duration: 0.4s;
 }
 
 .second-zrachok {
@@ -93,6 +69,7 @@ p {
   height: 40px;
   background-color: white;
   border-radius: 50%;
+  transition-duration: 0.4s;
 }
 
 .third-eye {
@@ -101,8 +78,9 @@ p {
   border-radius: 50%;
   position: absolute;
   z-index: -24;
-  left: -100px;
+  left: -20%;
   background-color: #C4222C;
+  transition-duration: 0.4s;
 }
 
 .third-zrachok {
@@ -111,26 +89,7 @@ p {
   height: 40px;
   background-color: white;
   border-radius: 50%;
-}
-
-.fourth-eye {
-  width: 75px;
-  height: 75px;
-  background-color: red;
-  border-radius: 50%;
-  position: absolute;
-  z-index: -22;
-  right: 64.79%;
-  top: 45%;
-
-}
-
-.fourth-zrachok {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  border-radius: 50%;
+  transition-duration: 0.4s;
 }
 
 .img1 {
@@ -336,21 +295,6 @@ p {
 }
 
 @media (max-width: 1440px) {
-  h2 {
-    font-size: 64px;
-    left: 160px;
-  }
-  .third {
-    bottom: 26px;
-  }
-  .second {
-    bottom: 90px;
-  }
-
-  .first {
-    bottom: 155px;
-  }
-
   .img1 {
     background-image: url(../img/1.1.svg);
     height: 650px;

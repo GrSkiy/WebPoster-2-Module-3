@@ -12,7 +12,461 @@ let firstTimer = 0
 let secondTimer = 0
 let thirdTimer = 0
 
+function firstTextJump() {
+  let textTimelineFirst = anime.timeline ({
 
+  })
+
+  textTimelineFirst
+  .add ({
+    targets: ".hi-first",
+    bottom: "50%",
+  })
+
+  .add ({
+    delay: 1000,
+    targets: ".hi-first",
+    bottom: "120%",
+
+  })
+
+  let textTimelineSecond = anime.timeline ({
+
+  })
+
+  textTimelineSecond
+  .add ({
+    delay: 2000,
+    targets: ".hi-second",
+    bottom: "50%",
+  })
+
+  .add ({
+    delay: 1000,
+    targets: ".hi-second",
+    bottom: "120%",
+  })
+
+  let textTimelineThird= anime.timeline ({
+
+  })
+
+  textTimelineThird
+  .add ({
+    delay: 4000,
+    duration: 1500,
+    duration:"2000",
+    targets: ".layer-red",
+    bottom: "200%"
+  })
+}
+
+function secondTextJump() {
+
+  let textTimelineFirst = anime.timeline ({
+
+  })
+
+  textTimelineFirst
+
+  .add ({
+    delay: 6500,
+    targets: ".layer-white-first",
+    bottom: "0%",
+    duration: 1000,
+    easing: "linear"
+  })
+
+  .add ({
+    targets: ".hi-third",
+    bottom: "50%",
+  })
+  .add ({
+    delay: 1000,
+    targets: ".hi-third",
+    bottom: "130%",
+  })
+  .add ({
+    delay: 2000,
+    targets: ".layer-white-first",
+    bottom: "200%",
+    duration: 2000,
+    easing: "linear"
+  })
+
+  let textTimelineSecond = anime.timeline ({
+
+  })
+
+  textTimelineSecond
+
+  .add ({
+    delay: 10000,
+    targets: ".hi-fourth",
+    bottom: "40%",
+  })
+  .add ({
+    delay: 1500,
+    targets: ".hi-fourth",
+    bottom: "150%",
+    duration: 1500,
+  })
+
+}
+
+function firstSmallEyesAnimation() {
+  let firstEyeTimeline = anime.timeline ({
+    delay: 300,
+  })
+
+  firstEyeTimeline
+  .add ({
+    targets: ".first-eye",
+    left: "70%",
+    top: "20%",
+  })
+  .add ({
+    targets: ".first-eye",
+    left: "50%",
+    top: "30%",
+  })
+  .add ({
+    targets: ".first-eye",
+    left: "30%",
+    top: "50%",
+  })
+  .add ({
+    targets: ".first-eye",
+    left: "10%",
+    top: "30%",
+  })
+  .add ({
+    targets: ".first-eye",
+    left: "-20%",
+    top: "20%",
+    duration: 1000,
+  })
+
+  let secondEyeTimeline = anime.timeline ({
+    delay: 300,
+  })
+
+  secondEyeTimeline
+  .add ({
+    delay: 500,
+    targets: ".second-eye",
+    left: "55%",
+    top: "20%",
+  })
+  .add ({
+    targets: ".second-eye",
+    left: "40%",
+    top: "30%",
+  })
+  .add ({
+    targets: ".second-eye",
+    left: "10%",
+    top: "60%",
+  })
+  .add ({
+    targets: ".second-eye",
+    left: "-20%",
+    top: "30%",
+    duration: 1000,
+  })
+
+
+  let thirdEyeTimeline = anime.timeline ({
+    delay: 300,
+  })
+
+  thirdEyeTimeline
+  .add ({
+    targets: ".third-eye",
+    left: "62%",
+    top: "54%",
+  })
+  .add ({
+    targets: ".third-eye",
+    left: "62%",
+    top: "70%",
+  })
+  .add ({
+    targets: ".third-eye",
+    left: "45%",
+    top: "30%",
+  })
+
+  .add ({
+    targets: ".third-eye",
+    left: "-20%",
+    top: "40%",
+    duration: 1000,
+  })
+
+
+  function changeA () {
+    let a = zIndexArrBig[getRandomArbitrary(0, zIndexArrBig.length -1)]
+    $( "#target1" ).css ({
+      "z-index": a,
+    })
+
+    $( "#targetA" ).css ({
+      "transform": "translateY(" + getRandomArbitrary(0, 80) + "px)" + "translateX(" + getRandomArbitrary(0, 80) + "px)" + "scale(" + scaleArr[getRandomArbitrary(0, scaleArr.length - 1)] + ")",
+    })
+
+
+  }
+
+  function changeB() {
+    let a = zIndexArrSmall[getRandomArbitrary(0, zIndexArrSmall.length -1)]
+
+    $( "#target2" ).css ({
+      "z-index": a,
+    })
+
+    $( "#targetB" ).css ({
+      "transform": "translateY(" + getRandomArbitrary(0, 50) + "px)" + "translateX(" + getRandomArbitrary(0, 50) + "px)" + "scale(" + scaleArr[getRandomArbitrary(0, scaleArr.length - 1)] + ")",
+    })
+  }
+
+  function changeC() {
+    let a = zIndexArrMIddle[getRandomArbitrary(0, zIndexArrMIddle.length -1)]
+
+    $( "#target3" ).css ({
+      "z-index": a,
+    })
+
+    $( "#targetC" ).css ({
+      "transform": "translateY(" + getRandomArbitrary(0, 25) + "px)" + "translateX(" + getRandomArbitrary(0, 25) + "px)" + "scale(" + scaleArr[getRandomArbitrary(0, scaleArr.length - 1)] + ")",
+    })
+  }
+
+  let firstTimer = setInterval(changeA, 1000)
+  setTimeout(function () {
+    clearInterval(firstTimer)
+  }, 3400)
+
+  let secondTimer = setInterval(changeB, 800)
+  setTimeout(function () {
+    clearInterval(secondTimer)
+  }, 3400)
+
+  let thirdTimer = setInterval(changeC, 600)
+  setTimeout(function () {
+    clearInterval(thirdTimer)
+  }, 3400)
+}
+
+function thirdTextJump() {
+  let textTimelineFirst = anime.timeline ({
+
+  })
+
+  textTimelineFirst
+
+  .add ({
+    delay: 6500,
+    targets: ".layer-white-second",
+    bottom: "0%",
+    duration: 1000,
+    easing: "linear"
+  })
+
+  .add ({
+    targets: ".hi-fifth",
+    bottom: "50%",
+  })
+  .add ({
+    delay: 1000,
+    targets: ".hi-third",
+    bottom: "130%",
+  })
+  .add ({
+    delay: 2000,
+    targets: ".layer-white-first",
+    bottom: "200%",
+    duration: 2000,
+    easing: "linear"
+  })
+}
+
+function firstCItyApereance() {
+  let firstFrame = anime.timeline({
+
+  });
+
+  firstFrame
+  .add({
+    targets: ".img3",
+    bottom: 0,
+    easing: "linear",
+    duration: 500,
+  })
+
+  .add({
+    targets: ".img2",
+    bottom: 0,
+    easing: "linear",
+    duration: 500,
+  })
+
+  .add({
+    targets: ".img7",
+    bottom: 0,
+    easing: "linear",
+    duration: 400,
+  })
+
+  let secondFrame = anime.timeline({
+    delay: 500,
+  });
+
+  secondFrame
+  .add({
+    targets: ".img4",
+    bottom: 0,
+    easing: "linear",
+    duration: 400,
+  })
+
+  .add({
+    targets: ".img5",
+    bottom: 0,
+    easing: "linear",
+    duration: 250,
+  })
+  .add({
+    targets: ".img16",
+    bottom: 0,
+    easing: "linear",
+    duration: 300,
+  })
+
+  let thirdFrame = anime.timeline({
+  });
+
+  thirdFrame
+  .add ({
+    targets: ".img1",
+    bottom: 0,
+    easing: "linear",
+    duration: 450,
+  })
+
+  .add ({
+    targets: ".img9",
+    bottom: 0,
+    easing: "linear",
+    duration: 200,
+  })
+
+  .add ({
+    targets: ".img10",
+    bottom: 0,
+    easing: "linear",
+    duration: 200,
+  })
+
+  .add ({
+    targets: ".img11",
+    bottom: 0,
+    easing: "linear",
+    duration: 200,
+  })
+
+  .add ({
+    targets: ".img12",
+    bottom: 0,
+    easing: "linear",
+    duration: 200,
+  })
+
+  .add ({
+    targets: ".img12",
+    bottom: 0,
+    easing: "linear",
+    duration: 200,
+  })
+
+  .add ({
+    targets: ".img13",
+    bottom: 0,
+    easing: "linear",
+    duration: 200,
+  })
+
+  .add ({
+    targets: ".img15",
+    bottom: 0,
+    easing: "linear",
+    duration: 200,
+  })
+
+  let fourthFrame = anime.timeline({
+    delay: 200,
+  });
+
+  fourthFrame
+  .add ({
+    targets: ".img17",
+    bottom: 0,
+    easing: "linear",
+    duration: 200,
+  })
+  .add ({
+    targets: ".img18",
+    bottom: 0,
+    easing: "linear",
+    duration: 200,
+  })
+
+  .add ({
+    targets: ".img6",
+    bottom: 0,
+    easing: "linear",
+    duration: 200,
+  })
+
+  .add ({
+    targets: ".img8",
+    bottom: 0,
+    easing: "linear",
+    duration: 200,
+  })
+
+  .add ({
+    targets: ".img14",
+    bottom: 0,
+    easing: "linear",
+    duration: 200,
+  })
+
+  .add ({
+    targets: ".img14",
+    bottom: 0,
+    easing: "linear",
+    duration: 200,
+  })
+}
+
+
+
+firstTextJump()
+secondTextJump()
+setTimeout(function() {
+  firstCItyApereance()
+}, 4000)
+setTimeout(function() {
+  firstSmallEyesAnimation()
+}, 13000)
+setTimeout(function() {
+  thirdTextJump()
+}, 16000)
+
+
+
+function thirdPart() {
 
 function changeA () {
   let a = zIndexArrBig[getRandomArbitrary(0, zIndexArrBig.length -1)]
@@ -777,3 +1231,5 @@ setTimeout(function() {
 setTimeout(function() {
     cityFallsTwo()
 }, 11000)
+
+}

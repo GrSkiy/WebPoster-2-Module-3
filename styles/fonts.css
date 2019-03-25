@@ -20,3 +20,14 @@
   url('../fonts/2.woff') format('woff'),
   url('../fonts/2.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: '3';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../fonts/3.eot');
+  src: url('../fonts/3.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/3.woff') format('woff'),
+  url('../fonts/3.ttf') format('truetype');
+}

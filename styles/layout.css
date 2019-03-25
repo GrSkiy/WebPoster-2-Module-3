@@ -62,7 +62,7 @@ h2 {
 }
 
 #hi-sixth {
-  color: white;
+  color: #C4222C;
   font-size: 120px;
   position: absolute;
   z-index: 100;
@@ -79,7 +79,7 @@ h2 {
   bottom: -40%;
 }
 
-.layer-red {
+.layer-red-first {
   background-color: #C4222C;
   width: 100%;
   height: 100%;

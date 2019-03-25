@@ -39,7 +39,7 @@ $( "#target2" ).css ({
   })
 
   $( "#targetB" ).css ({
-    "transform": "translateY(" + getRandomArbitrary(0, 25) + "px)" + "translateX(" + getRandomArbitrary(0, 25) + "px)" + "scale(" + scaleArr[getRandomArbitrary(0, scaleArr.length - 1)] + ")",
+    "transform": "translateY(" + getRandomArbitrary(0, 50) + "px)" + "translateX(" + getRandomArbitrary(0, 50) + "px)" + "scale(" + scaleArr[getRandomArbitrary(0, scaleArr.length - 1)] + ")",
   })
 }
 
@@ -264,11 +264,12 @@ function mainAnimation() {
   goChangeA()
 }
 
-function giantAnimation() {
+function giantGlazAnimationOne() {
 
-  $( "#giant-glaz" ).css ({
-    "top": 100 + "px",
-    "transition-duration": 2 + "s",
+  anime({
+    delay: 500,
+    targets: ".giant-glaz",
+    top: "10%",
   })
 
   $( "#giant-zrachok" ).css ({
@@ -277,10 +278,166 @@ function giantAnimation() {
   })
 }
 
+function giantGlazAnimationTwo() {
+
+  $( "#giant-glaz" ).css ({
+    "transition-duration": "initial",
+  })
+
+  let glazTimelineOne = anime.timeline ({
+
+  })
+
+  glazTimelineOne
+  .add({
+    targets: ".giant-glaz",
+    scale: 1.3,
+    easing: 'easeOutElastic(1, 0.2)',
+    duration: 700,
+  })
+
+  .add({
+    targets: ".giant-zrachok",
+    scaleY: 0.01,
+    translateX: 0,
+    duration: 300,
+  })
+
+  .add({
+    delay: 200,
+    targets: ".giant-zrachok",
+    scaleY: 1,
+    duration: 300,
+  })
+
+  .add({
+    targets: ".giant-zrachok",
+    scaleY: {
+      value: 0.01,
+      duration: 300,
+    },
+    translateX: {
+      value: 350,
+      duration: 500,
+    }
+  })
+
+  .add({
+    targets: ".giant-zrachok",
+    scaleY: 1,
+    duration: 300,
+  })
+
+  .add({
+    targets: ".giant-zrachok",
+    translateX: {
+      value: 100,
+      duration: 500,
+    },
+  })
+
+  .add({
+    targets: ".giant-zrachok",
+    scaleY: 0.01,
+    duration: 300,
+  })
+
+  .add({
+    targets: ".giant-zrachok",
+    scaleY: 1,
+    translateY: {
+      value: 250,
+      duration: 500,
+    },
+    duration: 300,
+  })
+
+  .add({
+    targets: ".giant-zrachok",
+    scale: 0,
+    delay: 200,
+    duration: 500,
+  })
+
+
+  let glazTimelineTwo = anime.timeline ({
+  })
+
+  glazTimelineTwo
+  .add({
+    targets: ".giant-glaz",
+    left: "30%",
+    duration: 1400,
+  })
+
+  let eyeTimeline = anime.timeline ({
+    easing: "linear"
+  })
+
+  eyeTimeline
+  .add({
+    targets: ".first-eye",
+    left: {
+      value: "120%",
+      duration: 300,
+    },
+  })
+
+  .add({
+    targets: ".second-eye",
+    left: {
+      value: "120%",
+      duration: 300,
+    },
+  })
+
+  .add({
+    targets: ".third-eye",
+    left: {
+      value: "120%",
+      duration: 300,
+    },
+  })
+
+  // .add({
+  //   targets: ".first-eye",
+  //   scale: {
+  //     value: 1.3,
+  //     duration: 300,
+  //   },
+  //   easing: 'easeOutElastic(1, 0.2)',
+  // })
+}
+
+function giantGlazAnimationThree() {
+  let glazTimelineOne = anime.timeline({
+
+  })
+
+  glazTimelineOne
+
+  .add ({
+    targets:".giant-glaz",
+    width: {
+      value: "100%",
+    },
+    borderRadius: {
+      value: ["50%", "0%"],
+    },
+    left: {
+      value: "0%",
+    },
+  })
+
+
+}
+
 function giantZrachokAnimation() {
-  $( "#giant-zrachok" ).css ({
-    "transform": "translateY(" + 120 + "px)" + "translateX(" + 250 + "px)",
-    "transition-duration": 0.7 + "s",
+
+  anime({
+    targets: ".giant-zrachok",
+    translateX: 250,
+    translateY: 120,
   })
 
   // setTimeout(function() {
@@ -293,7 +450,7 @@ function giantZrachokAnimation() {
 
 
 
-function cityFalls() {
+function cityFallsOne() {
   anime({
     targets: '.img1',
     height: 500,
@@ -400,39 +557,172 @@ function cityFalls() {
     targets: '.img18',
     height: 141,
     duration: 2500,
+    delay: 120,
+  })
+}
+
+function cityFallsTwo() {
+  anime({
+    targets: '.img1',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 200,
+  })
+  anime({
+    targets: '.img2',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 600,
+  })
+  anime({
+    targets: '.img3',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 400,
+  })
+  anime({
+    targets: '.img4',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 300,
+  })
+  anime({
+    targets: '.img5',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 100,
+  })
+  anime({
+    targets: '.img6',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 100,
+  })
+  anime({
+    targets: '.img7',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 300,
+  })
+  anime({
+    targets: '.img8',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 300,
+  })
+  anime({
+    targets: '.img9',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 500,
+  })
+  anime({
+    targets: '.img10',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 250,
+  })
+  anime({
+    targets: '.img11',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 350,
+  })
+  anime({
+    targets: '.img12',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 180,
+  })
+  anime({
+    targets: '.img13',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 400,
+  })
+  anime({
+    targets: '.img14',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 150,
+  })
+  anime({
+    targets: '.img15',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 350,
+  })
+  anime({
+    targets: '.img16',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 400,
+  })
+  anime({
+    targets: '.img17',
+    height: 0,
+    easing: "linear",
+    duration: 300,
+    delay: 300,
+  })
+  anime({
+    targets: '.img18',
+    height: 0,
+    easing: "linear",
+    duration: 300,
     delay: 12,
   })
 }
 
 function runAway() {
 
-  setTimeout(function() {
-    $( "#target1" ).css ({
-      "top": 20 + "%",
-      "left": 80 + "%",
-      "transition-duration": 1 + "s",
-    })
+  anime({
+    targets: ".first-eye",
+    top: "20%",
+    left: "80%",
+    delay: 300,
+  })
 
-  }, 300)
+  $( "#target1" ).css ({
+    "transition-duration": "initial",
+  })
 
+  anime({
+    targets: ".second-eye",
+    top: "3%",
+    left: "80%",
+    delay: 200,
+  })
 
   $( "#target2" ).css ({
-    "top": 10 + "%",
-    "left": 80 + "%",
-    "transition-duration": 2 + "s",
+    "transition-duration": "initial",
+  })
 
+  anime({
+    targets: ".third-eye",
+    top: "18%",
+    left: "72%",
   })
 
   $( "#target3" ).css ({
-    "top": 18 + "%",
-    "left": 72 + "%",
-    "transition-duration": 2 + "s",
+    "transition-duration": "initial",
   })
-
-    // $( "#targetA" ).css ({
-    //   "transform": "translateY(" + 50 + "px)" + "translateX(" + 50 + "px)",
-    //   "transition-duration": 0.4 + "s",
-    // })
 
     setTimeout(function() {
       $( "#targetA" ).css ({
@@ -443,7 +733,7 @@ function runAway() {
 
     setTimeout(function() {
       $( "#targetB" ).css ({
-        "transform": "translateY(" + 20 + "px)" + "translateX(" + 5 + "px)",
+        "transform": "translateY(" + 30 + "px)" + "translateX(" + 5 + "px)",
         "transition-duration": 0.4 + "s",
       })
     }, 600)
@@ -461,11 +751,11 @@ function runAway() {
 }, 1800)
 
 setTimeout(function() {
-  giantAnimation()
+  giantGlazAnimationOne()
 }, 4600)
 
 setTimeout(function() {
-    cityFalls()
+    cityFallsOne()
 }, 5200)
 
 setTimeout(function() {
@@ -475,3 +765,15 @@ setTimeout(function() {
 setTimeout(function() {
   giantZrachokAnimation()
 }, 6200)
+
+setTimeout(function() {
+  giantGlazAnimationTwo()
+}, 7000)
+
+setTimeout(function() {
+  giantGlazAnimationThree()
+}, 11000)
+
+setTimeout(function() {
+    cityFallsTwo()
+}, 11000)

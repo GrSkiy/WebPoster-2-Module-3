@@ -1096,4 +1096,4 @@ setTimeout(function() {
 }, 20000)
 setTimeout(function() {
   fifthTextJump()
-}, 44000)
+}, 45000)

@@ -4,8 +4,8 @@
 
 body {
   overflow: hidden;
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
 }
 
 h2 {
@@ -49,7 +49,7 @@ h2 {
   position: absolute;
   z-index: 100;
   left: 24.5%;
-  bottom: -80%;
+  bottom: -100%;
 }
 
 #hi-fifth {
@@ -94,7 +94,7 @@ h2 {
   width: 100%;
   height: 100%;
   position: absolute;
-  bottom: -200%;
+  bottom: -300%;
   z-index: 99;
 }
 
@@ -103,7 +103,7 @@ h2 {
   width: 100%;
   height: 100%;
   position: absolute;
-  bottom: -200%;
+  bottom: -300%;
   z-index: 99;
 }
 
@@ -112,7 +112,7 @@ h2 {
   width: 100%;
   height: 100%;
   position: absolute;
-  bottom: -200%;
+  bottom: -300%;
   z-index: 99;
 }
 
@@ -402,7 +402,7 @@ h2 {
   z-index: -35 ;
 }
 
-@media (max-width: 1440px) {
+@media all and (max-width: 1440px) {
   #hi-first {
     left: 39%;
   }
@@ -429,74 +429,85 @@ h2 {
 
   .img1 {
     background-image: url(../img/1.1.svg);
-    height: 650px;
+    height: 528px;
+    width: 420px;
   }
   .img2 {
     background-image: url(../img/2.1.svg);
-    height: 377px;
+    height: 307px;
+    width: 270px;
   }
   .img3 {
     background-image: url(../img/3.1.svg);
-    height: 516px
+    height: 419px;
+    width: 170px;
   }
   .img4 {
     background-image: url(../img/4.1.svg);
-    height: 517px;
+    height: 420px;
+    width: 170px;
   }
   .img5 {
     background-image: url(../img/5.1.svg);
-    height: 670px
+    height: 544px;
+    width: 206px;
+    left: 85.69%;
+    bottom: 0%;
   }
   .img6 {
     background-image: url(../img/6.1.svg);
-    height: 562px
+    height: 457px;
+    width: 180px;
   }
   .img7 {
     background-image: url(../img/7.1.svg);
-    height: 434px;
+    height: 353px;
+    width: 180px;
   }
   .img8 {
     background-image: url(../img/8.1.svg);
-    height: 360px;
+    height: 293px;
+    width: 190px;
   }
   .img9 {
     background-image: url(../img/9.1.svg);
-    height: 298px
+    height: 242px;
+    width: 89px;
   }
   .img10 {
     background-image: url(../img/10.1.svg);
-    height: 331px
+    height: 269px;
   }
   .img11 {
     background-image: url(../img/11.1.svg);
-    height: 396px
+    height: 321px;
   }
   .img12 {
     background-image: url(../img/12.1.svg);
-    height: 506px
+    height: 411px;
   }
   .img13 {
     background-image: url(../img/13.1.svg);
-    height: 549px
+    height: 446px;
   }
   .img14 {
     background-image: url(../img/14.1.svg);
-    height: 411px
+    height: 333px;
   }
   .img15 {
     background-image: url(../img/15.1.svg);
-    height: 254px
+    height: 206px;
   }
   .img16 {
     background-image: url(../img/16.1.svg);
-    height: 366px
+    height: 298px;
   }
   .img17 {
     background-image: url(../img/17.1.svg);
-    height: 394px
+    height: 320px;
   }
   .img18 {
     background-image: url(../img/18.1.svg);
-    height: 291px;
+    height: 236px;
   }
 }

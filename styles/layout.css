@@ -933,21 +933,23 @@ bottom: -388px;
 }
 
 .logo {
-  width: 37px;
+  width: 40px;
   height: 54px;
   position: absolute;
   right: 40px;
   background-image: url(../img/logo.svg);
   bottom: -40%;
+  background-size: cover;
 }
 
 .seclogo {
-  width: 37px;
+  width: 40px;
   height: 54px;
   position: absolute;
   right: 40px;
   background-image: url(../img/logo.svg);
   bottom: -40%;
+  background-size: cover;
 }
 
   .first-screen {
